@@ -4,10 +4,6 @@ from statistics import mean
 
 budget_csv = os.path.join(r'C:\Users\kylem\Desktop\Bootcamp_Assignments\python-challenge\PyBank\Resources\budget_data.csv')
 
-def average(budget):
-    change = int(budget[1])
-
-
 
 #Opens and reads budget_data.csv
 with open(budget_csv) as csvfile:
