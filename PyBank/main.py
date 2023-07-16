@@ -21,8 +21,7 @@ with open(budget_csv) as csvfile:
     change = []
     previous_profit = 0
     month_list = []
-    month_profit = []
-    profit_month = []
+
     for row in csvreader:
 
         #adding all the rows
@@ -50,11 +49,11 @@ with open(budget_csv) as csvfile:
 
     
     
-print ("Total Months:", month)
-print ("Total:", net)
-print ("Average Change:", ave_change)
-print ("Greatest Increase in Profits:", month_increase, greatest_increase)
-print ("Greatest Decrease in Profits:", month_decrease, greatest_decrease)
+print ("Total Months: ",month)
+print ("Total: $",net)
+print ("Average Change: $",ave_change)
+print ("Greatest Increase in Profits:", month_increase,"$", greatest_increase)
+print ("Greatest Decrease in Profits:", month_decrease, "$", greatest_decrease)
 
 
 
